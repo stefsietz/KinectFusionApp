@@ -1,0 +1,8 @@
+/home/stefan/UNI/SS2019/RealSenseStuff/KinectFusionApp/CMakeFiles/rebuild_cache.dir
+/home/stefan/UNI/SS2019/RealSenseStuff/KinectFusionApp/CMakeFiles/edit_cache.dir
+/home/stefan/UNI/SS2019/RealSenseStuff/KinectFusionApp/KinectFusionLib/CMakeFiles/rebuild_cache.dir
+/home/stefan/UNI/SS2019/RealSenseStuff/KinectFusionApp/KinectFusionLib/CMakeFiles/KinectFusion.dir
+/home/stefan/UNI/SS2019/RealSenseStuff/KinectFusionApp/KinectFusionLib/CMakeFiles/edit_cache.dir
+/home/stefan/UNI/SS2019/RealSenseStuff/KinectFusionApp/KinectFusionApp/CMakeFiles/rebuild_cache.dir
+/home/stefan/UNI/SS2019/RealSenseStuff/KinectFusionApp/KinectFusionApp/CMakeFiles/KinectFusionApp.dir
+/home/stefan/UNI/SS2019/RealSenseStuff/KinectFusionApp/KinectFusionApp/CMakeFiles/edit_cache.dir
