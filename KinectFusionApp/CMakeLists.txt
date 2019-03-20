@@ -12,7 +12,7 @@ set(PROJECT_SOURCE_DIR ${PROJECT_SOURCE_DIR}/src)
 #                 Dependencies
 # ------------------------------------------------
 ## CUDA
-find_package(CUDA 8.0 REQUIRED)
+find_package(CUDA 9.0 REQUIRED)
 IF (CUDA_FOUND)
     include_directories("${CUDA_INCLUDE_DIRS}")
     # Optional: Specify the arch of your CUDA hardware here
@@ -34,12 +34,6 @@ if (EIGEN3_INCLUDE_DIR)
     include_directories("${EIGEN3_INCLUDE_DIR}")
 endif (EIGEN3_INCLUDE_DIR)
 
-## OpenNI2
-find_package(openni2)
-if (OPENNI2_FOUND)
-    include_directories("${OPENNI2_INCLUDE_DIR}")
-endif (OPENNI2_FOUND)
-
 ## Intel RealSense
 find_package(realsense2 REQUIRED)
 if (realsense2_FOUND)
@@ -53,4 +47,4 @@ include_directories(${CMAKE_SOURCE_DIR}/KinectFusionLib/include)
 file(GLOB KinectFusionApp_SRCS ${PROJECT_SOURCE_DIR}/*.cpp)
 
 add_executable(KinectFusionApp ${KinectFusionApp_SRCS})
-target_link_libraries(KinectFusionApp ${OpenCV_LIBS} ${OPENNI2_LIBRARY} ${realsense2_LIBRARY} KinectFusion)
+target_link_libraries(KinectFusionApp ${OpenCV_LIBS} ${realsense2_LIBRARY} KinectFusion)

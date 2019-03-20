@@ -13,7 +13,6 @@
 #pragma GCC diagnostic ignored "-Wextra"
 #pragma GCC diagnostic ignored "-Weffc++"
 #pragma GCC diagnostic ignored "-Wunused-variable"
-#include <OpenNI.h>
 #pragma GCC diagnostic pop
 
 #include <librealsense2/rs.hpp>
@@ -58,27 +57,6 @@ private:
     mutable size_t current_index;
 };
 
-/*
- * Provides depth frames acquired by a Asus Xtion PRO LIVE camera.
- */
-class XtionCamera : public DepthCamera {
-public:
-    XtionCamera();
-    ~XtionCamera() override = default;
-
-    InputFrame grab_frame() const override;
-
-    CameraParameters get_parameters() const override;
-
-private:
-    openni::Device device;
-    mutable openni::VideoStream depthStream;
-    mutable openni::VideoStream colorStream;
-    mutable openni::VideoFrameRef depthFrame;
-    mutable openni::VideoFrameRef colorFrame;
-
-    CameraParameters cam_params;
-};
 
 /*
  * Provides depth frames acquired by an Intel Realsense camera.
